@@ -1,0 +1,38 @@
+# The URL the site will be built for
+base_url = "https://gwzzlab.github.io"
+title = "我的博客"
+description = "个人博客"
+theme = "tabi"
+
+# 语言设置
+default_language = "en"
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = false
+
+# 分类定义（必须声明，否则文章中使用 tags/categories 会报错）
+taxonomies = [
+    {name = "tags", feed = true},
+    {name = "categories", feed = true},
+]
+
+# 代码高亮
+[markdown]
+
+[markdown.highlighting]
+theme = "catppuccin-mocha"
+
+[extra]
+# Put all your custom variables here
+author = "秦时明月"
+
+# Tabi 主题配置
+skin = "teal"
+header_nav = [
+    { url = "/", name_en = "Home", name_zh = "首页" },
+    { url = "/blog/", name_en = "Blog", name_zh = "文章" },
+    { url = "/about/", name_en = "About", name_zh = "关于" },
+]
